@@ -1,0 +1,15 @@
+form {
+    width: 95%;
+    max-width: 1000px;
+    border: 1px solid #00aeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    background-color: #00aeff;
+    height: 1px;
+    width: 80%;
+}
