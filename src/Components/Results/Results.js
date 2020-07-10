@@ -6,8 +6,8 @@ class Results extends React.Component {
         return (
             <div style={{ display: this.props.formSubmitted ? 'flex' : 'none' }} className="results">
                 <h3>Your results</h3>
-                <p>On your salary of £50000, your income tax due will be:</p>
-                <div className="main-result">£3000</div>
+                <p>On your salary of £{this.props.income}, your income tax due will be:</p>
+                <div className="main-result">£{this.props.incomeTax}</div>
             </div>
         )
     }

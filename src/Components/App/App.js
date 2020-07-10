@@ -45,7 +45,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Form scotland={this.state.scotland} onScotlandChange={this.updateScotland} income={this.state.income} onIncomeChange={this.updateIncome} formSubmitted={this.state.formSubmitted} onFormSubmit={this.submitForm} />
-        <Results formSubmitted={this.state.formSubmitted} />
+        <Results formSubmitted={this.state.formSubmitted} income={this.state.income} incomeTax={this.state.incomeTax} />
       </div>
     );
   }
