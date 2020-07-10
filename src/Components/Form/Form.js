@@ -6,26 +6,18 @@ import Income from '../Income/Income';
 class Form extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            scotland: 'no',
-            income: '',
-        }
 
-        this.updateScotland = this.updateScotland.bind(this);
-        this.updateIncome = this.updateIncome.bind(this);
+        this.handleScotlandChange = this.handleScotlandChange.bind(this);
+        this.handleIncomeChange = this.handleIncomeChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    updateScotland(status) {
-        this.setState({
-            scotland: status
-        })
+    handleScotlandChange(status) {
+        this.props.onScotlandChange(status);
     }
 
-    updateIncome(income) {
-        this.setState({
-            income: income
-        })
+    handleIncomeChange(income) {
+        this.props.onIncomeChange(income);
     }
 
     handleSubmit(e) {
@@ -36,9 +28,9 @@ class Form extends React.Component {
     render() {
         return (
             <form style={{ display: this.props.formSubmitted ? 'none' : 'flex' }} onSubmit={this.handleSubmit}>
-                <Country scotland={this.state.scotland} onScotlandChange={this.updateScotland} />
+                <Country scotland={this.props.scotland} onChange={this.handleScotlandChange} />
                 <div className="separator"></div>
-                <Income income={this.state.income} onIncomeChange={this.updateIncome} />
+                <Income income={this.props.income} onChange={this.handleIncomeChange} />
                 <div className="separator"></div>
                 <input type="submit" value="Submit" className="submit"></input>
             </form>

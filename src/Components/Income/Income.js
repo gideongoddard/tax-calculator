@@ -8,7 +8,7 @@ class Income extends React.Component {
    }
 
    handleUserInput(e) {
-       this.props.onIncomeChange(e.target.value);
+       this.props.onChange(e.target.value);
    }
     
     render() {

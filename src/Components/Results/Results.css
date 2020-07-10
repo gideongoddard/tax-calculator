@@ -9,3 +9,13 @@
     padding: 0 2%;
     border-radius: 5px;
 }
+
+.main-result {
+    background-color: white;
+    color: #282c34;
+    font-size: calc(10px + 4vmin);
+    border: 1px solid #00aeff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}

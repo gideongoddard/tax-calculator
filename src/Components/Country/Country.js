@@ -8,7 +8,7 @@ class Country extends React.Component {
     }
 
     handleUserChoice(e) {
-        this.props.onScotlandChange(e.target.value);
+        this.props.onChange(e.target.value);
     }
     
     render() {
