@@ -34,10 +34,21 @@ class App extends React.Component {
 
   submitForm() {
     let incomeTax = Tax.calculateTax(this.state.scotland, this.state.income);
-    this.setState({
-      formSubmitted: true,
-      incomeTax: incomeTax
-    })
+    if (this.state.scotland === 'no') {
+      this.setState({
+        formSubmitted: true,
+        incomeTax: incomeTax.totalTax
+      })
+    } else if (this.state.scotland === 'yes') {
+      this.setState({
+        formSubmitted: true,
+        incomeTax: incomeTax.scotTotalTax
+      })
+    } else {
+      this.setState({
+        formSubmitted: true
+      })
+    }
   }
 
   render() {
