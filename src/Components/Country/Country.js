@@ -18,11 +18,11 @@ class Country extends React.Component {
                 <p>Income tax bands are different in Scotland than the rest of the UK</p>
                 <div className="radio">
                     <span>
-                        <input type="radio" id="yes" name="yes" onChange={this.handleUserChoice} value="yes" checked={this.props.scotland === "yes"} />
+                        <input type="radio" id="yes" name="yes" onChange={this.handleUserChoice} value="yes" checked={this.props.scotland === true} />
                         <label htmlFor="yes">Yes</label>
                     </span>
                     <span>
-                        <input type="radio" id="no" name="no" onChange={this.handleUserChoice} value="no" checked={this.props.scotland === "no"} />
+                        <input type="radio" id="no" name="no" onChange={this.handleUserChoice} value="no" checked={this.props.scotland === false} />
                         <label htmlFor="no">No</label>
                     </span>
                 </div>

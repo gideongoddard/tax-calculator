@@ -8,14 +8,14 @@ class Income extends React.Component {
    }
 
    handleUserInput(e) {
-       this.props.onChange(e.target.value);
+       this.props.onChange(Number(e.target.value));
    }
     
     render() {
         return (
             <div className="income-field">
                 <h3>What is your annual income (£)?</h3>
-                <input type="number" id="income" className="input" name="income" min="0" onChange={this.handleUserInput} value={this.props.income}></input>
+                <input type="number" id="income" className="input" name="income" min="0" value={this.props.income} onChange={this.handleUserInput}></input>
             </div>
         )
     }

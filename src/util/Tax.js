@@ -2,7 +2,7 @@ const Tax = {
     calculateTax (scotland, income) {
 
         // Not Scotland
-        if (scotland === 'no') {
+        if (scotland === false) {
 
             // Upper bounds of each tax band >> Additional rate has no upper bound.
             let upperPA = 12500;
@@ -38,7 +38,21 @@ const Tax = {
                     additionalAmount: 0,
                     additionalTax: 0,
                     totalIncome: income,
-                    totalTax: 0
+                    totalTax: 0,
+                    scotPersonalAllowanceAmount: 0,
+                    scotPersonalAllowanceTax: 0,
+                    scotStarterAmount: 0,
+                    scotStarterTax: 0,
+                    scotBasicAmount: 0,
+                    scotBasicTax: 0,
+                    scotIntermediateAmount: 0,
+                    scotIntermediateTax: 0,
+                    scotHigherAmount: 0,
+                    scotHigherTax: 0,
+                    scotTopAmount: 0,
+                    scotTopTax: 0,
+                    scotTotalIncome: 0,
+                    scotTotalTax: 0
                 }
 
             // Basic rate
@@ -55,7 +69,21 @@ const Tax = {
                     additionalAmount: 0,
                     additionalTax: 0,
                     totalIncome: income,
-                    totalTax: basicTax
+                    totalTax: basicTax,
+                    scotPersonalAllowanceAmount: 0,
+                    scotPersonalAllowanceTax: 0,
+                    scotStarterAmount: 0,
+                    scotStarterTax: 0,
+                    scotBasicAmount: 0,
+                    scotBasicTax: 0,
+                    scotIntermediateAmount: 0,
+                    scotIntermediateTax: 0,
+                    scotHigherAmount: 0,
+                    scotHigherTax: 0,
+                    scotTopAmount: 0,
+                    scotTopTax: 0,
+                    scotTotalIncome: 0,
+                    scotTotalTax: 0
                 }
 
             // Higher rate
@@ -80,7 +108,21 @@ const Tax = {
                     additionalAmount: 0,
                     additionalTax: 0,
                     totalIncome: income,
-                    totalTax: totalTax
+                    totalTax: totalTax,
+                    scotPersonalAllowanceAmount: 0,
+                    scotPersonalAllowanceTax: 0,
+                    scotStarterAmount: 0,
+                    scotStarterTax: 0,
+                    scotBasicAmount: 0,
+                    scotBasicTax: 0,
+                    scotIntermediateAmount: 0,
+                    scotIntermediateTax: 0,
+                    scotHigherAmount: 0,
+                    scotHigherTax: 0,
+                    scotTopAmount: 0,
+                    scotTopTax: 0,
+                    scotTotalIncome: 0,
+                    scotTotalTax: 0
                 }
 
             // Additional rate
@@ -103,12 +145,26 @@ const Tax = {
                     additionalAmount: additionalAmount,
                     additionalTax: additionalTax,
                     totalIncome: income,
-                    totalTax: totalTax
+                    totalTax: totalTax,
+                    scotPersonalAllowanceAmount: 0,
+                    scotPersonalAllowanceTax: 0,
+                    scotStarterAmount: 0,
+                    scotStarterTax: 0,
+                    scotBasicAmount: 0,
+                    scotBasicTax: 0,
+                    scotIntermediateAmount: 0,
+                    scotIntermediateTax: 0,
+                    scotHigherAmount: 0,
+                    scotHigherTax: 0,
+                    scotTopAmount: 0,
+                    scotTopTax: 0,
+                    scotTotalIncome: 0,
+                    scotTotalTax: 0
                 }
             }
 
         // Scotland
-        } else if (scotland === 'yes') {
+        } else if (scotland === true) {
 
             // Upper bounds of Scottish bands
             let upperScotPA = 12500;
@@ -143,6 +199,16 @@ const Tax = {
             // Personal allowance
             if (income <= upperScotPA) {
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: income,
                     scotPersonalAllowanceTax: 0,
                     scotStarterAmount: 0,
@@ -166,6 +232,16 @@ const Tax = {
                 scotTotalTax = scotStarterTax;
                 console.log(scotStarterTax, scotTotalTax);
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: upperScotPA,
                     scotPersonalAllowanceTax: 0,
                     scotStarterAmount: scotStarterAmount,
@@ -190,6 +266,16 @@ const Tax = {
                 scotBasicTax = (scotBasicAmount * scotBasicRate) / 100;
                 scotTotalTax = scotStarterTax + scotBasicTax;
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: upperScotPA,
                     scotPersonalAllowanceTax: 0,
                     scotStarterAmount: scotStarterAmount,
@@ -216,6 +302,16 @@ const Tax = {
                 scotIntermediateTax = (scotIntermediateAmount * scotIntermediateRate) / 100;
                 scotTotalTax = scotStarterTax + scotBasicTax + scotIntermediateTax;
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: upperScotPA,
                     scotPersonalAllowanceTax: 0,
                     scotStarterAmount: scotStarterAmount,
@@ -249,6 +345,16 @@ const Tax = {
                 scotHigherTax = (scotHigherAmount * scotHigherRate) / 100;
                 scotTotalTax = scotPersonalAllowanceTax + scotStarterTax + scotBasicTax + scotIntermediateTax + scotHigherTax;
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: upperScotPA,
                     scotPersonalAllowanceTax: scotPersonalAllowanceTax,
                     scotStarterAmount: scotStarterAmount,
@@ -280,6 +386,16 @@ const Tax = {
                 scotTopTax = (scotTopAmount * scotTopRate) / 100;
                 scotTotalTax = scotPersonalAllowanceTax + scotStarterTax + scotBasicTax + scotIntermediateTax + scotHigherTax + scotTopTax;
                 return {
+                    personalAllowanceAmount: 0,
+                    personalAllowanceTax: 0,
+                    basicAmount: 0,
+                    basicTax: 0,
+                    higherAmount: 0,
+                    higherTax: 0,
+                    additionalAmount: 0,
+                    additionalTax: 0,
+                    totalIncome: 0,
+                    totalTax: 0,
                     scotPersonalAllowanceAmount: upperScotPA,
                     scotPersonalAllowanceTax: scotPersonalAllowanceTax,
                     scotStarterAmount: scotStarterAmount,

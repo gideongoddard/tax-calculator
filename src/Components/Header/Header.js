@@ -6,7 +6,6 @@ class Header extends React.Component {
         return (
             <header>
                 <h1>UK Income Tax Calculator</h1>
-                <h2>Year 2020/21</h2>
             </header>
         )
     }
