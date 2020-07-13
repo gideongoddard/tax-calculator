@@ -18,6 +18,7 @@ class Results extends React.Component {
                 <p>On your salary of {this.props.income.toLocaleString('en-GB', {style: 'currency', currency: 'GBP', maximumFractionDigits: 2})}, your income tax due will be:</p>
                 <div className="main-result">{this.props.incomeTax.toLocaleString('en-GB', {style: 'currency', currency: 'GBP', maximumFractionDigits: 2})}</div>
                 <div className="separator"></div>
+                <h3>Breakdown by tax band</h3>
                 <div style={{ display: this.props.scotland ? 'none' : 'block' }} className="breakdown">
                     <table>
                         <thead>
