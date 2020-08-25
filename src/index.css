@@ -33,6 +33,7 @@ p {
   font-size: calc(14px + 0.25vw);
 }
 
-input {
+input[type="submit"] {
+  border-radius: 0;
   -webkit-appearance: none;
 }
