@@ -15,7 +15,6 @@ class Country extends React.Component {
         return (
             <div className="country-field">
                 <h3>Do you live in Scotland?</h3>
-                <p>Income tax bands are different in Scotland than the rest of the UK</p>
                 <div className="radio">
                     <span>
                         <input type="radio" id="yes" name="yes" onChange={this.handleUserChoice} value="yes" checked={this.props.scotland === true} />
@@ -26,6 +25,7 @@ class Country extends React.Component {
                         <label htmlFor="no">No</label>
                     </span>
                 </div>
+                <em>Income tax bands are different in Scotland than the rest of the UK</em>
             </div>
         )
     }

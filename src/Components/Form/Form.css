@@ -1,30 +1,25 @@
 form {
-    width: 95%;
-    max-width: 1000px;
-    border: 1px solid #00aeff;
+    width: 90%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2%;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-
-.separator {
-    background-color: #00aeff;
-    height: 1px;
-    width: 70%;
+    align-items: flex-start;
 }
 
 .submit {
-    width: 70%;
-    padding: 20px 10px;
-    border-radius: 5px;
-    font-size: calc(10px + 2vmin);
-    background-color: #00aeff;
-    color: white;
+    margin: 10px 0;
+    padding: 10px 20px;
+    min-height: 50px;
+    width: 175px;
+    background-color: #2b63ff;
+    color: #fff;
+    font-size: calc(16px + 0.5vw);
+    font-weight: 500;
+    border-radius: 3px;
     border: none;
-    margin: 30px auto;
     cursor: pointer;
+}
+
+label {
+    font-size: calc(16px + 0.5vw);
 }

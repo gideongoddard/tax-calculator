@@ -1,11 +1,24 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
+  background-color: #b5c2d8;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: normal;
+  justify-content: center;
+  align-items: flex-start;
   font-size: calc(10px + 1.75vmin);
-  color: white;
+  color: #000;
+  padding-top: 50px;
+}
+
+.content-box {
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #777;
+  padding-bottom: 50px;
 }

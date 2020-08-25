@@ -1,24 +1,22 @@
 .results {
-    width: 95%;
-    max-width: 1000px;
-    border: 1px solid #00aeff;
+    width: 90%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 2%;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
 .main-result {
-    background-color: white;
+    background-color: #f0f3f7;
     color: #282c34;
     font-size: calc(10px + 4vmin);
-    border: 1px solid #00aeff;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 20px;
     margin-bottom: 30px;
+    box-shadow: 3px 3px 3px #777;
 }
 
 .breakdown {
@@ -30,9 +28,17 @@ table {
 }
 
 th, td {
-    padding: 10px 15px;
-    border: 1px solid #00aeff;
-    font-size: calc(8px + 1vmin);
+    text-align: left;
+    padding: 10px 30px 10px 10px;
+    font-size: calc(12px + 0.5vmin);
+}
+
+th {
+    background-color: #b5c2d8;
+}
+
+tr:nth-child(even) {
+    background-color:#f0f3f7;
 }
 
 .total {
@@ -40,14 +46,15 @@ th, td {
 }
 
 button {
-    width: 40%;
-    min-width: 225px;
-    margin: 30px 0;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: calc(10px + 2vmin);
-    background-color: #00aeff;
-    color: white;
+    margin: 10px 0;
+    padding: 10px 20px;
+    min-height: 50px;
+    width: 175px;
+    background-color: #b5c2d8;
+    color: #000;
+    font-size: calc(16px + 0.5vw);
+    font-weight: 500;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
 }

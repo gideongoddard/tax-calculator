@@ -2,6 +2,7 @@ import React from 'react';
 import './Form.css';
 import Country from '../Country/Country';
 import Income from '../Income/Income';
+import Header from '../Header/Header';
 
 class Form extends React.Component {
     constructor(props) {
@@ -29,9 +30,7 @@ class Form extends React.Component {
         return (
             <form style={{ display: this.props.formSubmitted ? 'none' : 'flex' }} onSubmit={this.handleSubmit}>
                 <Country scotland={this.props.scotland} onChange={this.handleScotlandChange} />
-                <div className="separator"></div>
                 <Income income={this.props.income} onChange={this.handleIncomeChange} />
-                <div className="separator"></div>
                 <input type="submit" value="Submit" className="submit"></input>
             </form>
         )
