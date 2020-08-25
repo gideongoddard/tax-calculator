@@ -11,13 +11,19 @@ form {
     padding: 10px 20px;
     min-height: 50px;
     width: 175px;
-    background-color: #2b63ff;
+    background-color: #507fff;
     color: #fff;
     font-size: calc(16px + 0.5vw);
     font-weight: 500;
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit:hover {
+    background-color: #2b63ff;
+    box-shadow: 3px 3px 3px #ccc;
 }
 
 label {
