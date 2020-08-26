@@ -95,7 +95,6 @@ const Tax = {
                 } else if (income > 125000) {
                     upperPA = 0;
                 }
-                console.log(reducer);
                 personalAllowanceTax = 0;
                 basicAmount = upperBasic - upperPA;
                 basicTax = (basicAmount * basicRate) / 100;
@@ -235,7 +234,6 @@ const Tax = {
                 scotStarterAmount = income - upperScotPA;
                 scotStarterTax = (scotStarterAmount * scotStarterRate) / 100;
                 scotTotalTax = scotStarterTax;
-                console.log(scotStarterTax, scotTotalTax);
                 return {
                     personalAllowanceAmount: 0,
                     personalAllowanceTax: 0,
