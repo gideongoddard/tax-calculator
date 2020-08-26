@@ -88,9 +88,12 @@ const Tax = {
 
             // Higher rate
             } else if (income <= upperHigher && income > upperBasic) {
-                if (income > 125000) {
-                    personalAllowanceTax = (upperPA * basicRate) / 100;
+                if (income < 125000) {
+                    let reducer = Math.floor((income - 100000)/2);
+                    upperPA -= reducer;
+                    personalAllowanceTax = 0;
                 } else {
+                    upperPA = 0;
                     personalAllowanceTax = 0;
                 }
                 basicAmount = upperBasic - upperPA;
@@ -127,7 +130,8 @@ const Tax = {
 
             // Additional rate
             } else if (income > upperHigher) {
-                personalAllowanceTax = (upperPA * basicRate) / 100;
+                upperPA = 0;
+                personalAllowanceTax = 0;
                 basicAmount = upperBasic - upperPA;
                 basicTax = (basicAmount * basicRate) / 100;
                 higherAmount = upperHigher - upperBasic;
@@ -330,9 +334,12 @@ const Tax = {
 
             // Higher rate
             } else if (income <= upperScotHigher && income > upperScotIntermediate) {
-                if (income > 125000) {
-                    scotPersonalAllowanceTax = (upperScotPA * scotStarterRate) / 100;
+                if (income < 125000) {
+                    let reducer = Math.floor((income - 100000)/2);
+                    upperScotPA -= reducer;
+                    scotPersonalAllowanceTax = 0;
                 } else {
+                    upperScotPA = 0;
                     scotPersonalAllowanceTax = 0;
                 }
                 scotStarterAmount = upperScotStarter - upperScotPA;
@@ -373,7 +380,8 @@ const Tax = {
 
             // Top rate
             } else if (income > upperScotHigher) {
-                scotPersonalAllowanceTax = (upperScotPA * scotStarterRate) / 100;
+                upperScotPA = 0;
+                scotPersonalAllowanceTax = 0;
                 scotStarterAmount = upperScotStarter - upperScotPA;
                 scotStarterTax = (scotStarterAmount * scotStarterRate) / 100;
                 scotBasicAmount = upperScotBasic - upperScotStarter;
