@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tax-calculator/static/css/main.00cd5e56.chunk.css",
-    "main.js": "/tax-calculator/static/js/main.4f2d3516.chunk.js",
-    "main.js.map": "/tax-calculator/static/js/main.4f2d3516.chunk.js.map",
+    "main.css": "/tax-calculator/static/css/main.4a600f87.chunk.css",
+    "main.js": "/tax-calculator/static/js/main.eebd5333.chunk.js",
+    "main.js.map": "/tax-calculator/static/js/main.eebd5333.chunk.js.map",
     "runtime-main.js": "/tax-calculator/static/js/runtime-main.4d80dbd4.js",
     "runtime-main.js.map": "/tax-calculator/static/js/runtime-main.4d80dbd4.js.map",
     "static/js/2.a043ef0a.chunk.js": "/tax-calculator/static/js/2.a043ef0a.chunk.js",
     "static/js/2.a043ef0a.chunk.js.map": "/tax-calculator/static/js/2.a043ef0a.chunk.js.map",
     "index.html": "/tax-calculator/index.html",
-    "precache-manifest.34b59638f02639166367c41e6d3e1541.js": "/tax-calculator/precache-manifest.34b59638f02639166367c41e6d3e1541.js",
+    "precache-manifest.c9343ef25d12e1ef9a24944cc8b4a943.js": "/tax-calculator/precache-manifest.c9343ef25d12e1ef9a24944cc8b4a943.js",
     "service-worker.js": "/tax-calculator/service-worker.js",
-    "static/css/main.00cd5e56.chunk.css.map": "/tax-calculator/static/css/main.00cd5e56.chunk.css.map",
+    "static/css/main.4a600f87.chunk.css.map": "/tax-calculator/static/css/main.4a600f87.chunk.css.map",
     "static/js/2.a043ef0a.chunk.js.LICENSE.txt": "/tax-calculator/static/js/2.a043ef0a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d80dbd4.js",
     "static/js/2.a043ef0a.chunk.js",
-    "static/css/main.00cd5e56.chunk.css",
-    "static/js/main.4f2d3516.chunk.js"
+    "static/css/main.4a600f87.chunk.css",
+    "static/js/main.eebd5333.chunk.js"
   ]
 }
