@@ -30,8 +30,8 @@ table {
 
 th, td {
     text-align: left;
-    padding: 10px 30px 10px 5px;
-    font-size: calc(10px + 0.75vmin);
+    padding: 10px 25px 10px 5px;
+    font-size: calc(8px + 1vmin);
 }
 
 th {
@@ -64,7 +64,7 @@ button {
 
 button:hover {
     background-color: #8b9dbb;
-    box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 4px 4px 4px #ccc;
 }
 
 p {

@@ -23,7 +23,7 @@ form {
 
 .submit:hover {
     background-color: #2b63ff;
-    box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 4px 4px 4px #ccc;
 }
 
 label {
