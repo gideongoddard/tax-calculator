@@ -88,14 +88,15 @@ const Tax = {
 
             // Higher rate
             } else if (income <= upperHigher && income > upperBasic) {
-                if (income < 125000) {
-                    let reducer = Math.floor((income - 100000)/2);
+                let reducer;
+                if (income < 125000 && income > 100000) {
+                    reducer = Math.floor((income - 100000)/2);
                     upperPA -= reducer;
-                    personalAllowanceTax = 0;
-                } else {
+                } else if (income > 125000) {
                     upperPA = 0;
-                    personalAllowanceTax = 0;
                 }
+                console.log(reducer);
+                personalAllowanceTax = 0;
                 basicAmount = upperBasic - upperPA;
                 basicTax = (basicAmount * basicRate) / 100;
                 higherAmount = income - upperBasic;
@@ -334,14 +335,14 @@ const Tax = {
 
             // Higher rate
             } else if (income <= upperScotHigher && income > upperScotIntermediate) {
-                if (income < 125000) {
-                    let reducer = Math.floor((income - 100000)/2);
+                let reducer;
+                if (income < 125000 && income > 100000) {
+                    reducer = Math.floor((income - 100000)/2);
                     upperScotPA -= reducer;
-                    scotPersonalAllowanceTax = 0;
-                } else {
+                } else if (income > 125000) {
                     upperScotPA = 0;
-                    scotPersonalAllowanceTax = 0;
                 }
+                scotPersonalAllowanceTax = 0;
                 scotStarterAmount = upperScotStarter - upperScotPA;
                 scotStarterTax = (scotStarterAmount * scotStarterRate) / 100;
                 scotBasicAmount = upperScotBasic - upperScotStarter;
