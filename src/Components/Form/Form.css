@@ -6,6 +6,10 @@ form {
     align-items: flex-start;
 }
 
+form h3 {
+    margin: 20px 0;
+}
+
 .submit {
     margin: 10px 0;
     padding: 10px 20px;
@@ -24,10 +28,6 @@ form {
 .submit:hover {
     background-color: #2b63ff;
     box-shadow: 0 3px 5px #ccc;
-}
-
-input[type="number"] {
-    background-color:hsl(218, 55%, 90%);
 }
 
 label {

@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-                <h1>Calculate your UK Income Tax</h1>
+                <h1>{this.props.text}</h1>
             </header>
         )
     }

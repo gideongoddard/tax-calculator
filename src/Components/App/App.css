@@ -1,18 +1,17 @@
 .App {
-  background: linear-gradient(45deg, hsl(218, 31%, 78%), hsl(218, 55%, 90%));
+  background: linear-gradient(105deg, hsl(218, 75%, 95%) 52%, hsl(218, 55%, 90%) 52%);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: calc(10px + 1.75vmin);
   color: #000;
-  padding: 30px 0;
 }
 
 .content-box {
-  width: fit-content;
-  max-width: 90%;
-  padding: 50px 5%;
-  margin: 0 auto 30px auto;
+  max-width: 80%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,5 +19,16 @@
   border-radius: 15px;
   margin-bottom: 30px;
   background-color: #fff;
-  box-shadow: 0 5px 10px #777;
+  box-shadow: 0 15px 35px hsla(0, 0%, 50%, .5);
+}
+
+@media only screen and (min-width: 800px) {
+  .App {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .content-box {
+    width: 40%;
+  }
 }

@@ -2,6 +2,7 @@
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,10 +12,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 h3 {
@@ -32,12 +29,18 @@ p {
   font-size: calc(14px + 0.25vw);
 }
 
+input[type="radio"] {
+  width: 20px;
+  margin-left: 0;
+}
+
 input[type="submit"] {
   border-radius: 3px;
   -webkit-appearance: none;
 }
 
 input[type="number"] {
+  background-color: hsl(218, 75%, 95%);
   -moz-appearance: textfield;
 }
 
