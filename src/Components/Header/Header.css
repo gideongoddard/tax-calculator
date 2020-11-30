@@ -1,16 +1,11 @@
 header {
     width: 100%;
-    height: calc(50px + 2vw);
-    background-color: #f0f3f7;
-    border-radius: 3px 3px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
     text-align: center;
-    text-transform: uppercase;
-    font-size: calc(14px + 1.5vw);
+    font-size: calc(26px + 1.2vw);
     font-weight: 500;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import './Form.css';
 import Country from '../Country/Country';
 import Income from '../Income/Income';
-import Header from '../Header/Header';
 
 class Form extends React.Component {
     constructor(props) {

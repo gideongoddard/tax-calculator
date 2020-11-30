@@ -124,8 +124,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="content-box">
         <Header />
+        <div className="content-box">
         <Form scotland={this.state.scotland} onScotlandChange={this.updateScotland} income={this.state.income} onIncomeChange={this.updateIncome} formSubmitted={this.state.formSubmitted} onFormSubmit={this.submitForm} />
         <Results formSubmitted={this.state.formSubmitted} income={this.state.income} incomeTax={this.state.incomeTax} taxBreakdown={this.state.taxBreakdown} scotland={this.state.scotland} onReset={this.resetApp} />
         </div>

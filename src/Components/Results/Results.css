@@ -16,7 +16,7 @@
     border-radius: 3px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 0 3px 5px #ccc;
 }
 
 .breakdown {
@@ -25,7 +25,7 @@
 
 table {
     border-collapse: collapse;
-    box-shadow: 3px 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
 }
 
 th, td {
@@ -64,7 +64,7 @@ button {
 
 button:hover {
     background-color: #8b9dbb;
-    box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 0 3px 5px #ccc;
 }
 
 p {
