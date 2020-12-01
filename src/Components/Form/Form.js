@@ -1,5 +1,6 @@
 import React from 'react';
 import './Form.css';
+import ContentBox from '../ContentBox/ContentBox'
 import Country from '../Country/Country';
 import Income from '../Income/Income';
 
@@ -27,11 +28,13 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form style={{ display: this.props.formSubmitted ? 'none' : 'flex' }} onSubmit={this.handleSubmit}>
-                <Country scotland={this.props.scotland} onChange={this.handleScotlandChange} />
-                <Income income={this.props.income} onChange={this.handleIncomeChange} />
-                <input type="submit" value="Submit" className="submit"></input>
-            </form>
+            <div className="content-box" style={{ display: this.props.formSubmitted ? 'none' : 'flex' }}>
+                <form onSubmit={this.handleSubmit}>
+                    <Country scotland={this.props.scotland} onChange={this.handleScotlandChange} />
+                    <Income income={this.props.income} onChange={this.handleIncomeChange} />
+                    <input type="submit" value="Submit" className="submit"></input>
+                </form>
+            </div>
         )
     }
 }

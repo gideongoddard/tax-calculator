@@ -125,9 +125,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header text={this.state.formSubmitted ? "Your UK income tax contribution" : "Calculate your UK income tax"} />
-        <div className="content-box">
-        <Form scotland={this.state.scotland} onScotlandChange={this.updateScotland} income={this.state.income} onIncomeChange={this.updateIncome} formSubmitted={this.state.formSubmitted} onFormSubmit={this.submitForm} />
-        <Results formSubmitted={this.state.formSubmitted} income={this.state.income} incomeTax={this.state.incomeTax} taxBreakdown={this.state.taxBreakdown} scotland={this.state.scotland} onReset={this.resetApp} />
+        <div className="content-container">
+          <Form scotland={this.state.scotland} onScotlandChange={this.updateScotland} income={this.state.income} onIncomeChange={this.updateIncome} formSubmitted={this.state.formSubmitted} onFormSubmit={this.submitForm} />
+          <Results formSubmitted={this.state.formSubmitted} income={this.state.income} incomeTax={this.state.incomeTax} taxBreakdown={this.state.taxBreakdown} scotland={this.state.scotland} onReset={this.resetApp} />
         </div>
       </div>
     );
