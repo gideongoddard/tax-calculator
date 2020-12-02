@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "244ffc7d2d2c985414f9e6449ed868c1",
+    "revision": "1b162378353d47b460bdc0244a8509f6",
     "url": "/tax-calculator/index.html"
   },
   {
-    "revision": "9d983701c4ae8302bc10",
-    "url": "/tax-calculator/static/css/main.17983f31.chunk.css"
+    "revision": "9d75d8e83f0f62d2658c",
+    "url": "/tax-calculator/static/css/main.7fb63c9d.chunk.css"
   },
   {
     "revision": "914692be81f240205a26",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tax-calculator/static/js/2.a043ef0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d983701c4ae8302bc10",
+    "revision": "9d75d8e83f0f62d2658c",
     "url": "/tax-calculator/static/js/main.e804d2e0.chunk.js"
   },
   {
