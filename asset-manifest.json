@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/tax-calculator/static/css/main.818e720a.chunk.css",
-    "main.js": "/tax-calculator/static/js/main.e804d2e0.chunk.js",
-    "main.js.map": "/tax-calculator/static/js/main.e804d2e0.chunk.js.map",
+    "main.css": "/tax-calculator/static/css/main.05b6f154.chunk.css",
+    "main.js": "/tax-calculator/static/js/main.a576ff38.chunk.js",
+    "main.js.map": "/tax-calculator/static/js/main.a576ff38.chunk.js.map",
     "runtime-main.js": "/tax-calculator/static/js/runtime-main.4d80dbd4.js",
     "runtime-main.js.map": "/tax-calculator/static/js/runtime-main.4d80dbd4.js.map",
-    "static/js/2.a043ef0a.chunk.js": "/tax-calculator/static/js/2.a043ef0a.chunk.js",
-    "static/js/2.a043ef0a.chunk.js.map": "/tax-calculator/static/js/2.a043ef0a.chunk.js.map",
+    "static/js/2.0f252208.chunk.js": "/tax-calculator/static/js/2.0f252208.chunk.js",
+    "static/js/2.0f252208.chunk.js.map": "/tax-calculator/static/js/2.0f252208.chunk.js.map",
     "index.html": "/tax-calculator/index.html",
-    "precache-manifest.7a27409068e0048e626d8a9e928aa9e6.js": "/tax-calculator/precache-manifest.7a27409068e0048e626d8a9e928aa9e6.js",
+    "precache-manifest.b70548e22156e54329e3cc2cdcc8f1af.js": "/tax-calculator/precache-manifest.b70548e22156e54329e3cc2cdcc8f1af.js",
     "service-worker.js": "/tax-calculator/service-worker.js",
-    "static/css/main.818e720a.chunk.css.map": "/tax-calculator/static/css/main.818e720a.chunk.css.map",
-    "static/js/2.a043ef0a.chunk.js.LICENSE.txt": "/tax-calculator/static/js/2.a043ef0a.chunk.js.LICENSE.txt"
+    "static/css/main.05b6f154.chunk.css.map": "/tax-calculator/static/css/main.05b6f154.chunk.css.map",
+    "static/js/2.0f252208.chunk.js.LICENSE.txt": "/tax-calculator/static/js/2.0f252208.chunk.js.LICENSE.txt",
+    "static/media/tax-calc-icon.png": "/tax-calculator/static/media/tax-calc-icon.2f01085c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4d80dbd4.js",
-    "static/js/2.a043ef0a.chunk.js",
-    "static/css/main.818e720a.chunk.css",
-    "static/js/main.e804d2e0.chunk.js"
+    "static/js/2.0f252208.chunk.js",
+    "static/css/main.05b6f154.chunk.css",
+    "static/js/main.a576ff38.chunk.js"
   ]
 }
