@@ -3,6 +3,12 @@ header {
     padding: 0 10%;
 }
 
+header img {
+    height: 75px;
+    width: auto;
+    display: none;
+}
+
 h1 {
     text-align: center;
     font-size: calc(26px + 1.2vw);
@@ -12,5 +18,10 @@ h1 {
     header {
         width: 50%;
         padding: 5%;
+    }
+
+    header img {
+        display: block;
+        margin: auto;
     }
 }
