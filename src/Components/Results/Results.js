@@ -20,12 +20,12 @@ class Results extends React.Component {
                         <div className="key-data">{this.props.income.toLocaleString('en-GB', {style: 'currency', currency: 'GBP', maximumFractionDigits: 2})}</div>
                     </div>
                     <div  className="key-result">
-                        <div className="label">Your icome tax</div>
+                        <div className="label">Your income tax</div>
                         <div className="key-data">{this.props.incomeTax.toLocaleString('en-GB', {style: 'currency', currency: 'GBP', maximumFractionDigits: 2})}</div>
                     </div>
                 </div>
                 <div className="content-box full-results">
-                    <h3>Breakdown by tax band</h3>
+                    <h3>Tax band breakdown</h3>
                     <div style={{ display: this.props.scotland ? 'none' : 'block' }} className="breakdown">
                         <table>
                             <thead>

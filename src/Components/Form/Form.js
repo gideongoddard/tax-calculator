@@ -1,6 +1,5 @@
 import React from 'react';
 import './Form.css';
-import ContentBox from '../ContentBox/ContentBox'
 import Country from '../Country/Country';
 import Income from '../Income/Income';
 

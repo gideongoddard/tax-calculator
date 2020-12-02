@@ -1,18 +1,19 @@
 .country-field {
-    margin-bottom: 20px;
+    margin: 10px 20px;
 }
 
 .radio {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 10px;
 }
 
-.radio span {
+.radio-item {
+    padding: 5px 0;
+    width: 100%;
     display: flex;
-    margin-right: 50px;
 }
 
 .radio input {

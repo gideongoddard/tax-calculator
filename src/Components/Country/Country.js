@@ -14,16 +14,16 @@ class Country extends React.Component {
     render() {
         return (
             <div className="country-field">
-                <h3>You are a resident of...</h3>
+                <h3>Country of residence</h3>
                 <div className="radio">
-                    <span>
+                    <div className="radio-item">
                         <input type="radio" id="no" name="no" onChange={this.handleUserChoice} value="no" checked={this.props.scotland === false} />
-                        <label htmlFor="no">ENG, WAL or NI</label>
-                    </span>
-                    <span>
+                        <label htmlFor="no">England, Wales or Northern Ireland</label>
+                    </div>
+                    <div className="radio-item">
                         <input type="radio" id="yes" name="yes" onChange={this.handleUserChoice} value="yes" checked={this.props.scotland === true} />
-                        <label htmlFor="yes">SCO</label>
-                    </span>
+                        <label htmlFor="yes">Scotland</label>
+                    </div>
                 </div>
             </div>
         )
